@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css//style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Wdrażamy GA4</title>
   </head>
   <body>
@@ -24,6 +28,9 @@
         <!-- <div class="patryk"></div>
         <div class="dominik"></div> -->
       </div>
+
+      <!-- <div class="mouse"></div> -->
+      <!-- <div class="scroll"></div> -->
       <article id="why-should">
         <h2>DLACZEGO MUSISZ WDROŻYĆ GOOGLE ANALYTICS 4</h2>
         <hr />
@@ -90,7 +97,7 @@
         </p>
       </article>
       <hr />
-      <article id="comparison">
+      <article>
         <h2>AUTOMATYCZNA MIGRACJA DO GOOGLE ANALYTICS 4</h2>
         <p>
           Google ogłosiło, że wkrótce rozpocznie automatyczne migracje z
@@ -98,6 +105,87 @@
           wersję, czyli Google Analytics 4. Istnieją pewne plusy i minusy
           związane z tym rozwiązaniem
         </p>
+        <div id="comparison">
+          <div id="pros">
+            <h3>Plusy</h3>
+            <ul>
+              <li>
+                <i class="bx bx-check"></i>
+                <p>
+                  Automatycznie utworzone GA4 najprawdopodobniej poradzi sobie
+                  ze zbieraniem podstawowych danych o ruchu i użytkownikach.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div id="cons">
+            <h3>Minusy</h3>
+            <ul>
+              <li>
+                <i class="bx bx-x"></i>
+                <p>
+                  Obecnie istnieją pewne wyjątki, kiedy migracja może zakończyć
+                  się niepowodzeniem. Sama usługa GA4 zostanie założona, ale
+                  może ona nie zbierać nawet podstawowych danych. Wynika to z
+                  faktu, że automatyczna konfiguracja potrzebuje Global SIte
+                  Tagu (Globalnego Tagu Witryny), od niedawna nazywanego Tagiem
+                  Google (gtag.js):
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-x"></i>
+                <p>
+                  jeśli Google Uniwersal Analytics zostało wdrożone przy pomocy
+                  tagu analytics.js asystent automatycznej konfiguracji nie
+                  będzie w stanie utworzyć nowej usługi GA4
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-x"></i>
+                <p>
+                  GA4 nie będzie w stanie samo z siebie zbierać zdarzeń
+                  ecommerce. Podobnie sytuacja ma się z konwersjami (celami),
+                  które automatyczna konfiguracja zaimportuje z UA:
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-x"></i>
+                <p>
+                  Do GA4 nie będą przesyłane automatycznie zdarzenia, których
+                  nie masz zaimplementowanych jako gtag. Czyli w większości
+                  witryn, nie będą zbierane dane e-commerce oraz konwersje te,
+                  które mieliśmy w UA skonfigurowane przez Google Tag Managera.
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-x"></i>
+                <div class="explanation">
+                  <p>Do tego automatyczna konfiguracja nie uwzględnia:</p>
+                  <ul>
+                    <li>
+                      <p>filtrów (adresów IP do wykluczenia),</p>
+                    </li>
+                    <li>
+                      <p>
+                        wykluczeń witryn odsyłających (czyli np. bramek
+                        płatności)
+                      </p>
+                    </li>
+                    <li>
+                      <p>Google signals</p>
+                    </li>
+                    <li>
+                      <p>
+                        opcji kolekcjonowania danych przez 14 miesięcy (
+                        automatycznie dane zbierane są przez okres 2 miesięcy )
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </article>
     </main>
   </body>
