@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #293845;
 }
@@ -34,6 +38,11 @@ header button {
   border-radius: 5px;
   background-color: #f6c325;
   cursor: pointer;
+}
+
+a {
+  color: #293845;
+  text-decoration: none;
 }
 
 /* INTRODUCTION */
