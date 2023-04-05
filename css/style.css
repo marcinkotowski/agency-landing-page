@@ -211,6 +211,14 @@ h2 {
   align-self: flex-start;
 }
 
+.reason {
+  transition: 300ms ease;
+}
+
+.reason:hover {
+  transform: scale(1.05);
+}
+
 p {
   font-size: 1.15rem;
 }
@@ -282,7 +290,7 @@ p {
 #package-container {
   display: flex;
   justify-content: space-evenly;
-  /* gap: 1rem; */
+  margin-bottom: 2.5rem;
 }
 
 .package {
@@ -293,11 +301,18 @@ p {
   padding: 1.5rem;
   background-color: #f2f5f7;
   border: 3.5px solid #c3cfd9;
+  width: fit-content;
+  transition: 300ms ease;
+}
+
+.package:hover {
+  /* box-shadow: 0 0 20px #c6d3dd; */
+  transform: scale(1.02);
 }
 
 .package h3 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
 }
 
 .package ul {
@@ -351,7 +366,51 @@ p {
 
 #premium {
   height: fit-content;
-  width: fit-content;
+}
+
+#consultation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#consultation p {
+  text-align: center;
+}
+
+#consultation .package {
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+  transform: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+form input {
+  padding: 0.5rem;
+  border: 2.25px solid #c3cfd9;
+}
+
+form input:focus {
+  outline: none !important;
+  border: 2.25px solid #7f878e;
+  /* box-shadow: 0 0 10px #c6d3dd; */
+}
+
+.about {
+  margin-bottom: 3rem;
+}
+
+#consultation button {
+  padding: 0.45rem 2rem;
+}
+#count-customers {
+  margin: 3.5rem;
+  font-size: 3.5rem;
 }
 
 @media only screen and (max-width: 1150px) {
