@@ -9,6 +9,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="./js/script.js" defer></script>
     <title>Wdrażamy GA4</title>
   </head>
   <body>
@@ -305,13 +306,31 @@
           Chcesz dowiedzieć się więcej lub otrzymać ofertę wdrożenia Google
           Analytics 4<br />w twoim sklepie internetowym?
         </p>
-        <div class="package">
-          <h3>WYPEŁNIJ FORMULARZ</h3>
-          <form action="" id="contact">
-            <input type="text" placeholder="Imię" />
-            <input type="text" placeholder="Nazwisko" />
-            <input type="tel" placeholder="Numer telefonu" />
-          </form>
+        <div id="contact-container" class="package">
+          <div id="before-submit">
+            <h3>WYPEŁNIJ FORMULARZ</h3>
+            <form id="contact">
+              <input type="text" placeholder="Imię" name="name" required />
+              <input
+                type="text"
+                placeholder="Nazwisko"
+                name="surname"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Numer telefonu"
+                name="tel"
+                required
+              />
+            </form>
+          </div>
+          <div id="after-submit">
+            <i class="bx bx-check"></i>
+            <h3>
+              Zostałeś zapisany!<br /><span>Skontaktujemy się z tobą</span>
+            </h3>
+          </div>
           <button type="submit" form="contact">Wyślij</button>
         </div>
         <div class="about">

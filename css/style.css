@@ -307,7 +307,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
   background-color: #f2f5f7;
   border: 3.5px solid #c3cfd9;
   width: fit-content;
@@ -358,7 +358,6 @@ p {
 
 .package button {
   margin-top: auto;
-  margin-bottom: 1.5rem;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
   border: none;
@@ -414,8 +413,47 @@ form input:focus {
   margin-bottom: 3rem;
 }
 
-#consultation button {
+#contact-container {
+  height: 24rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-container button {
   padding: 0.45rem 2rem;
+  margin: 0;
+}
+
+#before-submit,
+#after-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#before-submit {
+  gap: 2rem;
+}
+
+#after-submit {
+  display: none;
+  margin: auto 0;
+  /* margin: auto 0; */
+}
+
+#after-submit span {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+#after-submit i {
+  background-color: #4fbe36;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 3rem;
+  margin: 0 auto 2rem auto;
 }
 
 #count-customers {
@@ -442,6 +480,19 @@ footer {
     grid-gap: 3rem;
     grid-auto-flow: dense;
     margin: 3rem;
+  }
+
+  #introduction {
+    height: 42rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #introduction img {
+    height: 33rem;
+    right: 2rem;
+    bottom: 0;
+    /* position: initial; */
   }
   /* article {
     margin: 1.5rem;
