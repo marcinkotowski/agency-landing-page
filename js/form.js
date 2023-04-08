@@ -34,6 +34,11 @@ function sendMail(inputs) {
   // });
 
   successContaner.style.display = "flex";
+  if (formContainer.classList.contains("shown")) {
+    formContainer.classList.remove("shown");
+  }
+  successContaner.className = "shown";
+
   formContainer.style.display = "none";
 
   button.style.backgroundColor = "#4fbe36";
@@ -47,8 +52,12 @@ function backToForm() {
 
   const successButton = document.querySelector(".success");
   successButton.classList.remove("success");
+
   successContaner.style.display = "none";
+  successContaner.classList.remove("shown");
+
   formContainer.style.display = "flex";
+  formContainer.className = "shown";
 
   button.style.backgroundColor = "#f6c325";
   button.style.color = "#293845";
