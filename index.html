@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css//style.css" />
+    <!-- Add Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script src="./js/script.js" defer></script>
+    <!-- Add Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--  -->
+    <script src="./js/form.js" defer></script>
     <title>Wdrażamy GA4</title>
   </head>
   <body>
     <header>
-      <img src="./images/logo.png" alt="" /><button>
-        <a href="#consultation">BEZPŁATNA KONSULTACJA</a>
-      </button>
+      <img src="./images/logo.png" alt="" /><a href="#consultation"
+        ><button>BEZPŁATNA KONSULTACJA</button></a
+      >
     </header>
     <main>
       <div id="introduction">
-        <h1>
+        <h1 data-aos="fade-right">
           Google przestanie wspierać<br /><b>Analytics Universal (GA3)</b
           ><br /><span><b>TY STRACISZ DANE </b></span>swojego<br />sklepu
           internetowego
         </h1>
-        <img src="./images/introductionAvatar.png" alt="" />
+        <img
+          data-aos="fade-left"
+          src="./images/introductionAvatar.png"
+          alt=""
+        />
       </div>
-
       <!-- <div class="mouse"></div> -->
       <!-- <div class="scroll"></div> -->
       <article id="why-should">
         <h2>DLACZEGO MUSISZ WDROŻYĆ GOOGLE ANALYTICS 4</h2>
         <hr />
         <ul id="reason-list">
-          <li class="reason">
+          <li class="reason" data-aos="fade-up">
             <h4><span>01</span>1 lipca 2023</h4>
             <p>
               przestanie działać obecna wersja narzędzia do analizy danych o
@@ -42,7 +50,7 @@
               nie będzie ono zbierać już żadnych nowych informacji
             </p>
           </li>
-          <li class="reason">
+          <li class="reason" data-aos="fade-up" data-aos-delay="50">
             <h4><span>02</span>31 grudnia 2023</h4>
             <p>
               będzie ostatnim dniem, w którym będzie możliwy dostęp do już
@@ -51,7 +59,7 @@
               4.
             </p>
           </li>
-          <li class="reason">
+          <li class="reason" data-aos="fade-up" data-aos-delay="100">
             <h4><span>03</span>Większa prywatność danych</h4>
             <p>
               nowa usługa zapewnia bardziej zaawansowane narzędzia do ochrony
@@ -60,7 +68,7 @@
               problemów związanych z naruszeniem przepisów.
             </p>
           </li>
-          <li class="reason">
+          <li class="reason" data-aos="fade-up">
             <h4><span>04</span>Lepsza analiza w czasie rzeczywistym</h4>
             <p>
               GA4 oferuje możliwość śledzenia użytkowników w czasie
@@ -68,7 +76,7 @@
               podejmowanie decyzji opartych na najnowszych informacjach
             </p>
           </li>
-          <li class="reason">
+          <li class="reason" data-aos="fade-up" data-aos-delay="50">
             <h4><span>05</span>Analiza oparta nie tylko na plikach cookie</h4>
             <p>
               wykorzystaniem Google Signals umożliwiająca uzyskanie
@@ -76,7 +84,7 @@
               z różnych urządzeń lub przeglądarek internetowych
             </p>
           </li>
-          <li class="reason">
+          <li class="reason" data-aos="fade-up" data-aos-delay="100">
             <h4><span>06</span>Lepsza analiza użytkowników mobilnych</h4>
             <p>
               wraz ze wzrostem liczby użytkowników korzystających z aplikacji
@@ -86,7 +94,7 @@
             </p>
           </li>
         </ul>
-        <p id="summary">
+        <p id="summary" data-aos="fade-up">
           <b>Podsumowując,</b> Google Analytics 4 to znacznie bardziej
           zaawansowane narzędzie niż poprzednia wersja, dzięki czemu umożliwia
           jeszcze dokładniejsze i wszechstronniejsze śledzenie i analizowanie
@@ -97,15 +105,15 @@
       </article>
       <hr />
       <article>
-        <h2>AUTOMATYCZNA MIGRACJA DO GOOGLE ANALYTICS 4</h2>
-        <p>
+        <h2 data-aos="fade-up">AUTOMATYCZNA MIGRACJA DO GOOGLE ANALYTICS 4</h2>
+        <p data-aos="fade-up">
           Google ogłosiło, że wkrótce rozpocznie automatyczne migracje z
           poprzedniej wersji Google Analytics (Uniwersal Analytics) na nowszą
           wersję, czyli Google Analytics 4. Istnieją pewne plusy i minusy
           związane z tym rozwiązaniem
         </p>
         <div id="comparison">
-          <div id="pros">
+          <div id="pros" data-aos="fade-up">
             <h3>Plusy</h3>
             <ul>
               <li>
@@ -117,7 +125,7 @@
               </li>
             </ul>
           </div>
-          <div id="cons">
+          <div id="cons" data-aos="fade-up" data-aos-delay="100">
             <h3>Minusy</h3>
             <ul>
               <li>
@@ -188,9 +196,11 @@
       </article>
       <hr />
       <article>
-        <h2>CENNIK WDROŻENIA I KONFIGURACJI GOOGLE ANALYTICS 4</h2>
+        <h2 data-aos="fade-up">
+          CENNIK WDROŻENIA I KONFIGURACJI GOOGLE ANALYTICS 4
+        </h2>
         <div id="package-container">
-          <div id="basic" class="package">
+          <div id="basic" class="package" data-aos="fade-up">
             <h3>BASIC</h3>
             <ul>
               <li>
@@ -215,9 +225,14 @@
                 </p>
               </li>
             </ul>
-            <button><a href="#consultation">Wybierz pakiet</a></button>
+            <a href="#consultation"><button>Wybierz pakiet</button></a>
           </div>
-          <div id="premium" class="package">
+          <div
+            id="premium"
+            class="package"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <h3>PREMIUM</h3>
             <ul>
               <li>
@@ -293,47 +308,49 @@
                 </p>
               </li>
             </ul>
-            <button><a href="#consultation">Wybierz pakiet</a></button>
+            <a href="#consultation"><button>Wybierz pakiet</button></a>
           </div>
         </div>
       </article>
       <hr />
       <article id="consultation">
-        <h2>BEZPŁATNA KONSULTACJA</h2>
-        <p>
+        <h2 data-aos="fade-up">BEZPŁATNA KONSULTACJA</h2>
+        <p data-aos="fade-up">
           Chcesz dowiedzieć się więcej lub otrzymać ofertę wdrożenia Google
           Analytics 4<br />w twoim sklepie internetowym?
         </p>
-        <div id="contact-container" class="package">
-          <div id="before-submit">
-            <h3>WYPEŁNIJ FORMULARZ</h3>
-            <form id="contact">
-              <input type="text" placeholder="Imię" name="name" required />
-              <input
-                type="text"
-                placeholder="Nazwisko"
-                name="surname"
-                required
-              />
-              <input
-                type="tel"
-                placeholder="Numer telefonu"
-                name="tel"
-                required
-              />
-            </form>
+        <div data-aos="fade-up">
+          <div id="contact-container" class="package">
+            <div id="before-submit">
+              <h3>WYPEŁNIJ FORMULARZ</h3>
+              <form id="contact">
+                <input type="text" placeholder="Imię" name="name" required />
+                <input
+                  type="text"
+                  placeholder="Nazwisko"
+                  name="surname"
+                  required
+                />
+                <input
+                  type="tel"
+                  placeholder="Numer telefonu"
+                  name="tel"
+                  required
+                />
+              </form>
+            </div>
+            <div id="after-submit">
+              <i class="bx bx-check"></i>
+              <h3>
+                Zostałeś zapisany!<br /><span>Skontaktujemy się z tobą</span>
+              </h3>
+            </div>
+            <button type="submit" form="contact">Wyślij</button>
           </div>
-          <div id="after-submit">
-            <i class="bx bx-check"></i>
-            <h3>
-              Zostałeś zapisany!<br /><span>Skontaktujemy się z tobą</span>
-            </h3>
-          </div>
-          <button type="submit" form="contact">Wyślij</button>
         </div>
         <div class="about">
-          <h2>O NAS</h2>
-          <p>
+          <h2 data-aos="fade-up">O NAS</h2>
+          <p data-aos="fade-up">
             Nie jesteśmy żadną korporacją :) Jesteśmy dwójką przyjaciół, którzy
             pasjonują<br />
             się marketingiem internetowym oraz analitykom w świecie
@@ -343,7 +360,7 @@
             zapewnić jak najwyższą jakość świadczonych przez nas usług
           </p>
         </div>
-        <h2>LICZBA PRZEPROWADZONYCH WDROŻEŃ GA4</h2>
+        <h2 data-aos="fade-up">LICZBA PRZEPROWADZONYCH WDROŻEŃ GA4</h2>
         <h3 id="count-customers">100+</h3>
       </article>
       <footer>
@@ -351,5 +368,8 @@
         <img id="dominik" src="./images/dominik.png" alt="" />
       </footer>
     </main>
+    <script>
+      AOS.init({ once: true });
+    </script>
   </body>
 </html>
