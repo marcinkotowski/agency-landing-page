@@ -57,9 +57,15 @@ a {
 }
 
 #introduction img {
-  height: 34.5rem;
+  height: 85%;
+  object-fit: contain;
   position: absolute;
   right: 0;
+  bottom: 0;
+}
+
+.mobile-photo {
+  display: none;
 }
 
 h1 {
@@ -184,13 +190,6 @@ h2 {
   text-align: center;
 }
 
-#why-should p {
-  font-weight: 400;
-  padding: 0 2rem 2.25rem 2rem;
-  padding: 0.75rem 2rem 3rem 2rem;
-  font-size: 1.15rem;
-}
-
 #why-should ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -232,6 +231,12 @@ p {
   font-size: 1.15rem;
 }
 
+#summary {
+  font-weight: 400;
+  padding: 0 2rem 2.25rem 2rem;
+  padding: 0.75rem 2rem 3rem 2rem;
+}
+
 #comparison {
   display: flex;
   margin: 3rem 0;
@@ -240,11 +245,11 @@ p {
 
 #pros,
 #cons {
-  width: 35rem;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.3rem;
+  /* background-color: blue; */
   /* flex: 1; */
 }
 
@@ -284,6 +289,11 @@ p {
 
 #comparison p {
   font-size: 1.025rem;
+}
+
+#pros h3,
+#cons h3 {
+  font-size: 1.45rem;
 }
 
 #comparison li li {
@@ -462,18 +472,24 @@ form input:focus {
 }
 
 footer {
-  height: 33rem;
   display: flex;
   justify-content: space-between;
-  margin-top: -18.5rem;
-  overflow: hidden;
+  align-items: flex-end;
+  margin-top: -25vw;
 }
 
+#dominik {
+  height: 38vw;
+}
 #patryk {
-  margin-top: 3.5rem;
+  height: 34vw;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1280px) {
+  #premium ul {
+    column-count: 2;
+  }
+
   #why-should ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -482,18 +498,14 @@ footer {
     margin: 3rem;
   }
 
-  #introduction {
-    height: 42rem;
-    flex-direction: column;
-    padding: 1rem;
+  #introduction h1 {
+    font-size: 2rem;
   }
 
-  #introduction img {
-    height: 33rem;
-    right: 2rem;
-    bottom: 0;
-    /* position: initial; */
+  #introduction {
+    height: 30rem;
   }
+
   /* article {
     margin: 1.5rem;
   } */
@@ -502,14 +514,109 @@ footer {
   /* Add hover */
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1080px) {
+  #premium ul {
+    column-count: 1;
+  }
+
+  #introduction h1 {
+    font-size: 1.8rem;
+  }
+
+  #introduction {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  #introduction h1 {
+    font-size: 1.6rem;
+  }
+
+  #introduction {
+    height: 23rem;
+  }
+
+  article {
+    margin: 2rem;
+  }
+
+  #why-should {
+    margin: 0 2rem;
+  }
+
   #why-should ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
     margin: 1.5rem;
   }
-  article {
-    margin: 1.5rem;
+
+  hr {
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #introduction h1 {
+    font-size: 1.5rem;
+  }
+
+  #introduction {
+    height: 21rem;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #package-container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  #comparison {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  #introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 35rem;
+  }
+
+  #introduction img {
+    height: 21rem;
+    bottom: 0;
+  }
+
+  #introduction h1 {
+    padding: 2rem 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  header {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #introduction {
+    align-items: center;
+    height: fit-content;
+  }
+
+  #introduction h1 {
+    padding: 2rem;
+  }
+
+  #introduction img {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
   }
 }
