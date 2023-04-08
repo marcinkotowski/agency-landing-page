@@ -19,5 +19,5 @@ function counting() {
       clearInterval(counterInterval);
     }
     current++;
-  }, 25);
+  }, 20);
 }
