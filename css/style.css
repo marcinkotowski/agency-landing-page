@@ -331,6 +331,7 @@ form input {
   padding: 0.5rem;
   border: 2.25px solid #c3cfd9;
   font-size: 0.9rem;
+  width: 12.5rem;
 }
 
 form input:focus {
@@ -343,10 +344,14 @@ form input:focus {
 }
 
 #contact-container {
-  height: 24rem;
-  width: 20rem;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
+}
+
+#before-submit,
+#after-submit {
+  width: 16.5rem;
 }
 
 #contact-container button {
@@ -440,7 +445,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 80rem) {
+@media only screen and (max-width: 83rem) {
   #premium ul {
     column-count: 2;
   }
@@ -503,11 +508,6 @@ footer {
     margin: 0 3rem;
   }
 
-  #why-should ul {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 1rem;
-  }
-
   #summary {
     padding: 1rem 1rem 2rem 1rem;
   }
@@ -542,9 +542,25 @@ footer {
 }
 
 @media only screen and (max-width: 50.75rem) {
+  #why-should ul {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem;
+  }
+
   #package-container {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
+  }
+
+  #basic li,
+  #premium li {
+    width: 18rem;
+  }
+
+  #before-submit,
+  #after-submit {
+    width: 18rem;
   }
 
   #comparison {
@@ -602,10 +618,16 @@ footer {
     object-fit: contain;
   }
 
-  #why-should ul {
-    display: flex;
-    flex-wrap: wrap;
-    /* margin: 0.5rem; */
+  footer {
+    margin-top: -10rem;
+    height: 15rem;
+  }
+  #patryk {
+    margin-bottom: -2.4rem;
+  }
+
+  html {
+    font-size: 3vw;
   }
 
   /* article {
@@ -623,28 +645,4 @@ footer {
   hr {
     padding: 0 0.75rem;
   } */
-
-  html {
-    font-size: 3vw;
-  }
-
-  footer {
-    margin-top: -10rem;
-    height: 15rem;
-  }
-  #patryk {
-    margin-bottom: -2.4rem;
-  }
-}
-
-@media only screen and (max-width: 24rem) {
-  #basic li,
-  #premium li {
-    width: 100%;
-  }
-
-  #contact-container {
-    width: 100%;
-    height: fit-content;
-  }
 }
