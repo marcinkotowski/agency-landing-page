@@ -405,7 +405,7 @@ footer {
 }
 #patryk {
   height: 100%;
-  margin-bottom: -4.5rem;
+  margin-bottom: -4.75rem;
 }
 
 /* Animate success form */
@@ -482,7 +482,7 @@ footer {
   }
 
   #patryk {
-    margin-bottom: -4rem;
+    margin-bottom: -3.75rem;
   }
 }
 
@@ -539,11 +539,6 @@ footer {
     margin-top: -15rem;
     height: 20.5rem;
   }
-
-  #patryk {
-    margin-bottom: -3.5rem;
-    margin-left: -2rem;
-  }
 }
 
 @media only screen and (max-width: 50.75rem) {
@@ -572,6 +567,14 @@ footer {
   #introduction h1 {
     padding: 2rem 5rem;
     font-size: 2rem;
+  }
+
+  #patryk {
+    margin-left: -2rem;
+  }
+  #dominik {
+    margin-right: -1rem;
+    height: 92.5%;
   }
 }
 
@@ -629,13 +632,8 @@ footer {
     margin-top: -10rem;
     height: 15rem;
   }
-
   #patryk {
-    margin-bottom: -2.25rem;
-  }
-  #dominik {
-    margin-right: -1rem;
-    height: 90%;
+    margin-bottom: -2.4rem;
   }
 }
 
