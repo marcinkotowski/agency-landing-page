@@ -344,7 +344,7 @@ form input:focus {
 }
 
 #contact-container {
-  height: fit-content;
+  height: 24rem;
   display: flex;
   justify-content: space-between;
 }
@@ -561,6 +561,10 @@ footer {
   #before-submit,
   #after-submit {
     width: 18rem;
+  }
+
+  form input {
+    width: 13.5rem;
   }
 
   #comparison {
