@@ -1,5 +1,5 @@
-const successContaner = document.querySelector("#after-submit");
-const formContainer = document.querySelector("#before-submit");
+const afterSubmit = document.querySelector("#after-submit");
+const beforeSubmit = document.querySelector("#before-submit");
 const form = document.querySelector("#contact");
 const button = document.querySelector("#consultation button");
 
@@ -8,7 +8,7 @@ form.addEventListener("submit", statusFormCheck);
 function statusFormCheck(e) {
   e.preventDefault();
 
-  const styles = window.getComputedStyle(successContaner);
+  const styles = window.getComputedStyle(afterSubmit);
   const successDisplayType = styles.getPropertyValue("display");
 
   if (successDisplayType === "none") {
@@ -28,18 +28,18 @@ function sendMail(inputs) {
   //   },
   //   body: JSON.stringify({
   //     imie: inputs[0].value,
-  //     nazwisko: inputs[1].value,
-  //     telefon: inputs[2].value,
+  //     telefon: inputs[1].value,
+  //     godzina: inputs[2].value,
   //   }),
   // });
 
-  successContaner.style.display = "flex";
-  if (formContainer.classList.contains("shown")) {
-    formContainer.classList.remove("shown");
+  afterSubmit.style.display = "flex";
+  if (beforeSubmit.classList.contains("shown")) {
+    beforeSubmit.classList.remove("shown");
   }
-  successContaner.className = "shown";
+  afterSubmit.className = "shown";
 
-  formContainer.style.display = "none";
+  beforeSubmit.style.display = "none";
 
   button.style.backgroundColor = "#4fbe36";
   button.style.color = "white";
@@ -53,11 +53,11 @@ function backToForm() {
   const successButton = document.querySelector(".success");
   successButton.classList.remove("success");
 
-  successContaner.style.display = "none";
-  successContaner.classList.remove("shown");
+  afterSubmit.style.display = "none";
+  afterSubmit.classList.remove("shown");
 
-  formContainer.style.display = "flex";
-  formContainer.className = "shown";
+  beforeSubmit.style.display = "flex";
+  beforeSubmit.className = "shown";
 
   button.style.backgroundColor = "#f6c325";
   button.style.color = "#293845";
